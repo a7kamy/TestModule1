@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <input type="text" id="ToDO" />
+        <button id="AddButton">Add</button>
+    </div>
+    <ul id="ToDoList">
+        <li id="li1">to be detached</li>
+    </ul>
+    <script src="../Scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#AddButton').click(function () {
+            var txtValue = $('#ToDO').val();
+            //$('#ToDoList').append('<li>' + txtValue + '</li>');
+            //$('#ToDoList').prepend('<li>' + txtValue + '</li>');
+            $('#li1').html("<strong>text changed</strong>  <em> another txt </em>");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Register.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <div id="FNameContainer">
+            <label for="Fname">First name :</label>
+            <input required id="FName" type="text" placeholder="first name" />
+        </div>
+        <div>
+            <label>Last name :</label>
+            <input placeholder="Last name" required type="text" />
+        </div>
+        <div>
+            <label>Age :</label>
+            <input name="age"  type="number" required min="18" max="40" />
+        </div>
+        <div>
+            <label>Gender :</label>
+            <select>
+                <optgroup label="gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label>Password :</label>
+            <input required pattern="[0-9]{2}[A-Z]{3}" id="password" type="password" />
+        </div>
+        <div>
+            <input id="submit" type="submit" />
+        </div>
+    </form>
+    <script src="../Scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            debugger;
+            $('#submit').click(function (event) {
+                event.preventDefault();
+                var value = $('#password').val();
+                if (Number.isInteger(value)) {
+                    $('#password').addClass('inValid');
+                }
+            })
+        })
+    </script>
+    <script>
+        var fNameElement = document.getElementById('FName');
+        fNameElement.onkeyup = function (event) {
+            console.log(event.target.value);
+        }
+        fNameElement.onmouseover = function () {
+            console.log('mouse over enterred');
+        }
+
+        //document.getElementById('submit').onclick = function (event) {
+        //    event.preventDefault();
+        //    var FNameContainer = document.getElementById('FNameContainer');
+        //    var fNameElement = document.getElementById('FName');
+        //    FNameContainer.removeChild(fNameElement);
+        //}
+
+        document.getElementById('submit').onclick = function (event) {
+            event.preventDefault();
+            var FNameContainer = document.getElementById('FNameContainer');
+            FNameContainer.removeAttribute('id');
+        }
+    </script>
+
+
+</body>
+</html>

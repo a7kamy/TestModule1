@@ -1,0 +1,24 @@
+﻿body {
+    /*background-color: red;
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:500px;*/
+}
+
+header {
+    font-family:Arial;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(0, 122, 203);
+    text-align: left;
+    text-decoration:underline;
+    text-transform:uppercase;
+    padding:5px;
+    border: 10px dashed;
+    margin-bottom:50px;
+}

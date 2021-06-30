@@ -1,0 +1,24 @@
+﻿div {
+    margin-bottom:10px;
+}
+
+/*#FNameContainer{
+    background-color:blue;
+}*/
+
+.inValid{
+    border:2px dashed;
+    border-color:red;
+}
+input {
+    border: solid 1px;
+}
+
+
+input:invalid {
+    border-color: #f00;
+}
+
+input:valid {
+    border-color: #0f0;
+}
