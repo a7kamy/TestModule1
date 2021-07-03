@@ -72,16 +72,32 @@
     <Content Include="demo\demo.js" />
     <Content Include="demo\logo.jpg" />
     <Content Include="demo\UII2G15_02_2021_22_07_10.png" />
+    <Content Include="FlexBox\Flex.css" />
+    <Content Include="FlexBox\Flex.html" />
+    <Content Include="fonts\OFL.txt" />
     <Content Include="forms\Factorial.html" />
+    <Content Include="forms\RegisterJSValidation.css" />
+    <Content Include="forms\RegisterJSValidation.html" />
     <Content Include="forms\Register.css" />
     <Content Include="forms\Register.html" />
     <Content Include="forms\sumForm.html" />
+    <Content Include="fonts\Cairo-Black.ttf" />
+    <Content Include="fonts\Cairo-Bold.ttf" />
+    <Content Include="fonts\Cairo-ExtraLight.ttf" />
+    <Content Include="fonts\Cairo-Light.ttf" />
+    <Content Include="fonts\Cairo-Regular.ttf" />
+    <Content Include="fonts\Cairo-SemiBold.ttf" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="forms\TodoList.html" />
+    <Content Include="Positions\Position.css" />
+    <Content Include="Positions\Position.html" />
+    <Content Include="pseudo\pseudo.css" />
+    <Content Include="pseudo\pseudo.html" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="testJS.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

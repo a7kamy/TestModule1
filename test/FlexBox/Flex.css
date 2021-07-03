@@ -1,0 +1,13 @@
+﻿div{
+    display:flex;
+    padding:5px;
+    background-color:blue;
+    flex-wrap:wrap;
+}
+strong{
+    line-height:2em;
+    background-color:grey;
+    border: 2px solid black;
+    width:50px;
+    text-align:center;
+}

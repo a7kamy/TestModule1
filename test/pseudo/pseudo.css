@@ -1,0 +1,39 @@
+﻿/*p::first-letter {
+    text-transform:uppercase;
+    font-size:28px;
+}*/
+
+/*p::first-line {
+    text-transform: uppercase;
+    font-size: 28px;
+}*/
+
+/*p::after {
+    content: "added text";
+}*/
+
+::selection{
+    color:yellow;
+    background-color:aqua;
+}
+
+a:link{
+    text-decoration:line-through;
+}
+
+input:disabled{
+    background-color:aqua;
+}
+
+input:checked{
+    width:40px;
+}
+
+/*p:first-child{
+    background-color:aqua;
+}*/
+
+p:nth-child(3) {
+    background-color: aqua;
+}
+

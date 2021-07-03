@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="RegisterJSValidation.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <div id="FNameContainer">
+            <label for="Fname">الاسم الاول :</label>
+            <input id="FName" type="text" placeholder="first name" />
+        </div>
+        <div>
+            <label>Last name :</label>
+            <input placeholder="Last name" id="LName" type="text" />
+        </div>
+        <div>
+            <label>Age :</label>
+            <input name="age" id="age"  type="number" />
+        </div>
+        <div>
+            <label>Gender :</label>
+            <select>
+                <optgroup label="gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label>Password :</label>
+            <input id="password" type="password" />
+        </div>
+        <div>
+            <input id="submit" type="submit" />
+        </div>
+    </form>
+    <script src="../Scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        class person {
+            age = 0;
+            name = "";
+            constructor(attr1, attr2) {
+                this.age = attr1;
+            }
+        }
+
+
+        $('#submit').click(function (event) {
+            event.preventDefault();
+            var fName = $('#FName').val();
+            if (fName === "")
+                $('#FName').addClass('inValid');
+
+            var lName = $('#LName').val();
+            if (lName === "")
+                $('#LName').addClass('inValid');
+
+            var age = $('#age').val();
+            //if (!(!isNaN(age) && parseInt(age) >= 18 && parseInt(age) <= 40))
+            //    $('#age').addClass('inValid');
+            if (isNaN(age) || parseInt(age) < 18 || parseInt(age) > 40)
+                $('#age').addClass('inValid');
+            debugger;
+
+            var password = $('#password').val();
+            var pattern = new RegExp("[0-9]{2}[a-z]{5}")
+            if (!pattern.test(password))
+                $('#password').addClass('inValid');
+
+        })
+    </script>
+
+
+</body>
+</html>

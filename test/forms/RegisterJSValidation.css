@@ -1,0 +1,19 @@
+﻿
+@font-face {
+    font-family: Cairo-Black;
+    src: url(../fonts/Cairo-Black.ttf);
+}
+
+
+input{
+    font-family:Cairo-Black;
+}
+
+div {
+    margin-bottom:10px;
+}
+
+.inValid{
+    border:2px solid;
+    border-color:red;
+}

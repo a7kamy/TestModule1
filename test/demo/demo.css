@@ -6,7 +6,7 @@
     background-size:500px;*/
 }
 
-header {
+/*header {
     font-family:Arial;
 }
 
@@ -21,4 +21,30 @@ p {
     padding:5px;
     border: 10px dashed;
     margin-bottom:50px;
+}*/
+p {
+    /*width:100px;
+    height:100px;*/
+    /*resize:horizontal;*/
+    overflow: auto;
+    text-indent: 20px;
+    /*word-spacing: 2em;*/
+    text-shadow: 2px 2px 4px red;
+    border: 2px solid red;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid black;
+    /*border-radius: 50%;*/
+    /*outline: 4px solid green;
+    outline-offset: 5px;*/
+}
+h1,h2{
+    width:50px;
+    /*display:inline;*/
+}
+header{
+    width:200px;
+}
+nav , header{
+    /*display:inline;*/
 }
